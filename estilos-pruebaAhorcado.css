@@ -1,0 +1,204 @@
+body {
+    background-color: blueviolet;
+}
+
+P {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.agregarpalabranueva {
+    display: block;
+    width: 250px;
+    height: 80px;
+    margin: 0 auto;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 20%;
+    text-transform: uppercase;
+}
+
+.btns1 {
+    display: block;
+}
+
+#agregarPalabra {
+    padding: 30px;
+    height: 80px;
+    width: 250px;
+    border-radius: 30%;
+    box-sizing: border-box;
+    margin-top: 60px;
+    font-size: 18px;
+    box-shadow: 40px;
+    border: 1px solid rgb(156, 80, 228);;
+    background-color: blueviolet;
+}
+
+#agregarPalabra:hover {
+    transition: 1s all;
+    background-color: rgb(187, 11, 187);
+    transform: scale(1.5);
+}
+
+#comenzar {
+    background-color: blueviolet;
+    padding: 30px;
+    height: 80px;
+    width: 250px;
+    border-radius: 30%;
+    box-sizing: border-box;
+    margin-top: 80px;
+    font-size: 18px;
+    box-shadow: 100px;
+    border: 1px solid rgb(156, 80, 228);
+    
+}
+
+#comenzar:hover {
+    transition: 1s all;
+    background-color: #13dfce;
+    transform: scale(1.5);
+}
+
+.tablero {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: left;
+    align-items: center;
+    height: auto;
+}
+
+#horca {
+    text-align: center;
+}
+
+#contenedor {
+    display: flex;
+    margin-left: -100px;
+}
+
+#contenedor span {
+    background-color: blueviolet;
+    font-size: 3em;
+    width: 1em;
+    gap: 30px;
+    border-bottom: 3px solid;
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#otrasLetras {
+    font-size: 3em;
+    width: 5em;
+    gap: 30px;
+    padding: 20px;
+    margin-right: 20px;
+    margin-left: 400px;
+    display: flex;
+    position: absolute;
+    margin-top: 300px;
+}
+
+.botones {
+    margin-left: 380px;
+    display: flex;
+    height: 40px;
+    width: auto;
+}
+
+#nuevoJuego {
+    width: 130px;
+    background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
+    border-radius: 20%;
+    box-sizing: border-box;
+    transform: scale(1.5);
+    margin-right: 70px;
+}
+
+#nuevoJuego:hover {
+    color: #fff;
+    /* color de fuente hover */
+}
+
+#nuevoJuego::after {
+    content: "";
+    background: #4741d7;
+    /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: scale(0, 0) rotate(-180deg);
+    transition: all 0.3s ease;
+    border-radius: 20%;
+}
+
+#nuevoJuego:hover::after {
+    transition: all 0.3s ease-out;
+    transform: scale(1, 1) rotate(0deg);
+    border-radius: 20%;
+}
+
+#desistir {
+    width: 130px;
+    background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
+    border-radius: 20%;
+    box-sizing: border-box;
+    transform: scale(1.5);
+    margin-right: 70px;
+}
+
+#desistir:hover {
+    color: #fff;
+    /* color de fuente hover */
+}
+
+#desistir::after {
+    content: "";
+    background: #4741d7;
+    /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: scale(0, 0) rotate(-180deg);
+    transition: all 0.3s ease;
+    border-radius: 20%;
+}
+
+#desistir:hover::after {
+    transition: all 0.3s ease-out;
+    transform: scale(1, 1) rotate(0deg);
+    border-radius: 20%;
+}
+
+.mensaje {
+    margin-left: 400px;
+    font-size: 3em;
+    display: flex;
+    position: absolute;
+}
+
+#ganaste {
+    margin-top: -150px;
+    color: #eb94d0;
+    text-shadow: #fff;
+}
+
+#perdiste {
+    margin-top: -100px;
+    color: #eb94d0;
+    text-shadow: #fff;
+}

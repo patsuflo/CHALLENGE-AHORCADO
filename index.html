@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AHORCADO</title>
+    <link rel="stylesheet" href="estilos-pruebaAhorcado.css">
+
+</head>
+
+<body>
+    <header>
+        <img src="Logo@2x.png" alt="logoalura">
+    </header>
+    <main>
+        <div id="primeraPantalla">
+            <p> Si lo desea,puede ingresar una palabra nueva</p>
+            <input type="text" class="agregarpalabranueva" placeholder="SOLO MAYUSCULAS"> </input>
+            <section class="btns1" style="text-align: center;">
+                <button id="agregarPalabra" onclick="agregar()">AGREGAR PALABRA</button>
+                <br>
+                <button id="comenzar" onclick="ocultar()">COMENZAR</button>
+            </section>
+        </div>
+
+        <div id="segundaPantalla">
+            <div class="tablero">
+                <canvas id="horca" width="400" height="450"> </canvas>
+                <div id="contenedor"> </div>
+                <div class="mensaje">
+                    <span id="ganaste"></span>
+                    <span id="perdiste"></span>
+                </div>
+                <p id="otrasLetras"></p>
+            </div>
+
+            <section class="botones">
+                <button id="nuevoJuego" onclick="comenzarJuego()">NUEVO JUEGO</button>
+                <button id="desistir" onclick="aparecer();fin()">FINALIZAR</button>
+            </section>
+
+        </div>
+    </main>
+    <script src="ahorcado.js">   </script>
+    <script src="funciones.js"></script>
+    <script src="canvas.js"></script>
+</body>
+
+</html>
